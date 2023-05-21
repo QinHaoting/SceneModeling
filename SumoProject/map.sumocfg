@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+     <input>
+         <net-file value="map.net.xml"/> 		
+         <additional-files value="map.poly.xml"/>
+         <route-files value="trips.trips.xml"/>
+     </input>
+ </configuration>

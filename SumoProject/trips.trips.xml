@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- generated on 2023-05-04 17:50:57.012065 by $Id$
+  options: -n map.net.xml -r map.rou.xml -e 100 -l
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!--主车-->
+    <vType id="EgoCar" vClass="evehicle" accel="1.0" decel="5.0" length="4.0" maxSpeed="120.0" sigma="0.0" color="0,255,255"/>
+    <!--辅车-->
+        <!--家用车-->
+    <vType id="Sedan" vClass="passenger" accel="1.0" decel="5.0" length="4.0" maxSpeed="120.0" sigma="0.0" color="255,97,0"/>
+        <!--警车-->
+    <vType id="Police" vClass="authority" accel="1.0" decel="5.0" length="5.0" maxSpeed="120.0" sigma="0.0" color="255,0,255"/>
+        <!--公交车-->
+    <vType id="Bus" vClass="bus" accel="1.0" decel="5.0" length="12.0" maxSpeed="60.0" sigma="0.0" color="255,255,0"/>
+        <!--城市越野车-->
+    <vType id="SUV" vClass="hov" accel="1.0" decel="5.0" length="6.0" maxSpeed="60.0" sigma="0.0" color="0,255,127"/>
+    
+    <trip id="0" depart="0.00" from="140035804#3" to="140035804#3" type="EgoCar"/>
+    <!--
+    <trip id="0" depart="0.00" from="140035800#5" to="-472555650#1"/>
+    -->
+    
+    <trip id="1" depart="1.00" from="1031528884#2" to="724053062#4" type="Sedan"/>
+    <trip id="2" depart="2.00" from="140036130#0" to="-472555651#0" type="Sedan"/>
+    <trip id="3" depart="3.00" from="-412515703#2" to="140035804#9" type="Bus"/>
+    <trip id="4" depart="4.00" from="724053064#1" to="1111813356" type="Sedan"/>
+    
+    <!--
+    <trip id="1" depart="1.00" from="464114846#0" to="140035800#3" type="Sedan"/>
+    <trip id="2" depart="2.00" from="464114846#0" to="140035800#6" type="Sedan"/>
+    <trip id="3" depart="3.00" from="140035804#9" to="140035800#3" type="Sedan"/>
+    <trip id="4" depart="4.00" from="1057662071#2" to="61670018#6" type="Sedan"/>
+    <trip id="5" depart="5.00" from="464114851#0" to="464114851#3" type="Sedan"/>
+    -->
+    <trip id="6" depart="6.00" from="248664930#3" to="-248664925#0" type="Sedan"/>
+    <trip id="7" depart="7.00" from="1111813358" to="-248664925#0" type="Sedan"/>
+    <!--
+    <trip id="8" depart="8.00" from="140035825#2" to="140035829#0"/>
+    -->
+    <trip id="9" depart="9.00" from="248663899#0" to="-412515706#0" type="Sedan"/>
+    <trip id="10" depart="10.00" from="475294244" to="248664930#3" type="Sedan"/>
+    <trip id="11" depart="11.00" from="-286016042#1" to="248664925#1" type="SUV"/>
+    <trip id="12" depart="12.00" from="724053064#1" to="773911406#1" type="Sedan"/>
+    <trip id="13" depart="13.00" from="-773911406#1" to="-464114716#2" type="Police"/>
+    <trip id="14" depart="14.00" from="248663899#2" to="464114846#0" type="Bus"/>
+    <trip id="15" depart="15.00" from="464114714#0" to="464114851#0" type="Sedan"/>
+    <trip id="16" depart="16.00" from="-412515704#3" to="280097906#5" type="Sedan"/>
+    <trip id="17" depart="17.00" from="-280097906#5" to="248664925#1" type="Bus"/>
+    <trip id="18" depart="18.00" from="-140035829#1" to="464114716#0" type="Sedan"/>
+    <trip id="19" depart="19.00" from="140035804#9" to="-774885815#2" type="Sedan"/>
+    <trip id="20" depart="20.00" from="475294244" to="-471718183#1" type="Sedan"/>
+    <trip id="21" depart="21.00" from="538381240#4" to="-471718183#0" type="Sedan"/>
+    <trip id="22" depart="22.00" from="280097906#2" to="773911406#1" type="Bus"/>
+    <trip id="23" depart="23.00" from="471718183#1" to="140035821" type="SUV"/>
+    <!--
+    <trip id="24" depart="24.00" from="1111813357" to="-248663899#0"/>
+    -->
+    <trip id="25" depart="25.00" from="464114726#0" to="1111813359" type="Sedan"/>
+    <trip id="26" depart="26.00" from="248664930#4" to="-471718206" type="Sedan"/>
+    <trip id="27" depart="27.00" from="-280097906#4" to="464114851#3" type="SUV"/>
+    <trip id="28" depart="28.00" from="280097906#2" to="-471718206" type="Sedan"/>
+    <trip id="29" depart="29.00" from="464114716#2" to="-464329596#0" type="Sedan"/>
+    <trip id="30" depart="30.00" from="-464329596#1" to="248663899#0" type="Bus"/>
+    <trip id="31" depart="31.00" from="471718206" to="140036130#1" type="Sedan"/>
+    <trip id="32" depart="32.00" from="1031528884#2" to="-471718183#1" type="Sedan"/>
+    <trip id="33" depart="33.00" from="1023294358#0" to="248663899#2" type="Sedan"/>
+    <trip id="34" depart="34.00" from="464114714#0" to="140035821" type="Sedan"/>
+    <!--
+    <trip id="35" depart="35.00" from="471718197#0" to="1023294358#0"/>
+    -->
+    <trip id="36" depart="36.00" from="1057662071#0" to="773911406#1" type="Sedan"/>
+    <!--
+    <trip id="37" depart="37.00" from="-471718195" to="-286016042#1"/>
+    -->
+    <trip id="38" depart="38.00" from="-464114716#2" to="773911406#1" type="SUV"/>
+    <trip id="39" depart="39.00" from="1031528884#0" to="-248664925#0" type="Sedan"/>
+    <trip id="40" depart="40.00" from="464329596#1" to="412515706#3" type="Bus"/>
+    <!--
+    <trip id="41" depart="41.00" from="-471718196#2" to="-412515704#1"/>
+    -->
+    <trip id="42" depart="42.00" from="724053062#0" to="464114846#2" type="Sedan"/>
+    <trip id="43" depart="43.00" from="472492404#1" to="140035804#10" type="Bus"/>
+    <trip id="44" depart="44.00" from="140035804#12" to="464114851#0" type="Sedan"/>
+    <trip id="45" depart="45.00" from="-248663899#2" to="-464329596#0" type="Sedan"/>
+    <trip id="46" depart="46.00" from="475294244" to="286016042#1" type="Sedan"/>
+    <trip id="47" depart="47.00" from="464329596#2" to="464114846#0" type="Sedan"/>
+    <trip id="48" depart="48.00" from="464114846#2" to="140036130#6" type="Bus"/>
+    <!--
+    <trip id="49" depart="49.00" from="471718194#0" to="412515704#1"/>
+    -->
+    <!--
+    <trip id="94" depart="94.00" from="140035800#8" to="140035817"/>
+    <trip id="95" depart="95.00" from="412515704#0" to="-464114716#0"/>
+    <trip id="96" depart="96.00" from="464114846#0" to="412515706#3"/>
+    <trip id="97" depart="97.00" from="61670018#0" to="140035800#6"/>
+    <trip id="98" depart="98.00" from="-1111813346#3" to="140035804#12"/>
+    <trip id="99" depart="99.00" from="280097906#2" to="471718194#0"/>
+    -->
+</routes>
