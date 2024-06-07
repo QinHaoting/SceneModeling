@@ -1,5 +1,6 @@
-# SceneModeling
-## 基于SUMO与Unity3D的车联网场景建模与设计
+# A V2X Simulator implementing via SUMO and Unity3D
+
+A V2X project that uses **SUMO** and **Unity3D** to simulate real-time communication through the `Traci` interface.
 
 ### Project Structure
 
@@ -9,13 +10,14 @@
 |-- MyProject   // Unity3D Project，implement V2X simulation of 3 dimension
 ``````
 
+### Run
 
+1. run **SUMO**
 
-仿真步骤：
+   open command shell and run the command below
 
-Step1. 开启SUMO仿真：
-``sumo-gui -c map.sumocfg --start --remote-port 4001 --step-length 0.02``
+   ``sumo-gui -c map.sumocfg --start --remote-port 4001 --step-length 0.02``
 
-Step2. 运行Unity3D
+2. run **Unity3D**
 
-open Unity and import the `MyProject`, and run the program.
+​	open Unity and import `MyProject`, and run the program.
